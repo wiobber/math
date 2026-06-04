@@ -3,7 +3,7 @@ name: Ximera Workflow
 on:
   push:    
     branches:
-        - 'main'
+        - 'v279'
 
 jobs:
   build-ximera:
