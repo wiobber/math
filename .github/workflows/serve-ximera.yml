@@ -63,10 +63,10 @@ jobs:
           rm -rf ximera-downloads/with-answers
           # git config --global http.postBuffer 524288000
           # git config --global core.compression 9
-          ./xmScripts/xmlatex bake  -j 5 calc1Book/calcTest.tex
-          ./xmScripts/xmlatex frost calc1Book/calcTest.tex
+          ./xmScripts/xmlatex bake  -j 5 
+          ./xmScripts/xmlatex frost 
           ./xmScripts/xmlatex name  
-          ./xmScripts/xmlatex serve  -f calc1Book/calcTest.tex
+          ./xmScripts/xmlatex serve  -f 
           # ./xmScripts/xmlatex ghaction
           echo "✅ Published to $XIMERA_URL$XIMERA_NAME " >> $GITHUB_STEP_SUMMARY
 
